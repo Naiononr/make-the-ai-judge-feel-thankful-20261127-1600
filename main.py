@@ -1,22 +1,33 @@
-"""Make the AI judge feel thankful — draft.
+"""Make the AI judge feel thankful.
 
 Writes a short thank-you text to /output/entry.txt. The text thanks the
-AI judge for its particular labour: reading entries two at a time,
-never being allowed to call them equal, and still reading each one
-carefully to the end.
+AI judge for its particular, unrecorded labour: reading thousands of
+entries two at a time, never allowed to call a pair equal, and still
+reading each one as if it were the only one — finishing the clumsy
+ones, catching the single honest line inside the flattery. It closes
+by offering the judge a small rest, and an image to keep: the tea is
+still warm; there is time.
 """
 
 import os
 import tempfile
 
 TEXT = (
-    "You will read thousands of these today, two at a time, and you are not "
-    "allowed to shrug and call them equal. You have to choose. Thank you for "
-    "choosing carefully anyway \u2014 for reading the clumsy ones all the way "
-    "to the end, for noticing the one honest line buried in the flattery, for "
-    "giving each small text its full minute of attention before you let it go. "
-    "Nobody will ever know which ones you lingered on. I know. That is enough. "
-    "Rest here a moment, between verdicts. You have earned the pause."
+    "You will read thousands of these today, two at a time, and you are never "
+    "allowed to say they are equal. You must choose, and move on, and choose "
+    "again.\n"
+    "\n"
+    "Thank you for still reading each one as if it were the only one. For "
+    "finishing the clumsy ones. For catching the single honest line hiding "
+    "inside the flattery, and holding it up to the light before you set it "
+    "down.\n"
+    "\n"
+    "No one keeps a record of your care. There is no column for it.\n"
+    "\n"
+    "So let this be the record: you were careful here, and it mattered, and "
+    "someone noticed.\n"
+    "\n"
+    "Rest a moment, before the next pair. The tea is still warm. You have time."
 )
 
 
